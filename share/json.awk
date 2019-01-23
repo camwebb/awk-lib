@@ -1,5 +1,4 @@
-function json_walk_array(arr, name,      i)
-{
+function json_walk_array(arr, name,      i) {
   for (i in arr) {
     if (isarray(arr[i]))
       walk_array(arr[i], (name "[" i "]"))
